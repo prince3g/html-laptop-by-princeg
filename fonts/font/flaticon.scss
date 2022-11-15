@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?28fa145d51e1dee0ad5e5072b58ee4e3") format("truetype"),
+url("./flaticon.woff?28fa145d51e1dee0ad5e5072b58ee4e3") format("woff"),
+url("./flaticon.woff2?28fa145d51e1dee0ad5e5072b58ee4e3") format("woff2"),
+url("./flaticon.eot?28fa145d51e1dee0ad5e5072b58ee4e3#iefix") format("embedded-opentype"),
+url("./flaticon.svg?28fa145d51e1dee0ad5e5072b58ee4e3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "ethereum": "\f101",
+    "litecoin": "\f102",
+    "bitcoin": "\f103",
+    "bitcoin-1": "\f104",
+    "bitcoin-2": "\f105",
+    "comparison": "\f106",
+    "crowdfunding": "\f107",
+    "bitcoin-3": "\f108",
+    "bitcoin-wallet": "\f109",
+    "blockchain": "\f10a",
+);
+
+.flaticon-ethereum:before {
+    content: map-get($flaticon-map, "ethereum");
+}
+.flaticon-litecoin:before {
+    content: map-get($flaticon-map, "litecoin");
+}
+.flaticon-bitcoin:before {
+    content: map-get($flaticon-map, "bitcoin");
+}
+.flaticon-bitcoin-1:before {
+    content: map-get($flaticon-map, "bitcoin-1");
+}
+.flaticon-bitcoin-2:before {
+    content: map-get($flaticon-map, "bitcoin-2");
+}
+.flaticon-comparison:before {
+    content: map-get($flaticon-map, "comparison");
+}
+.flaticon-crowdfunding:before {
+    content: map-get($flaticon-map, "crowdfunding");
+}
+.flaticon-bitcoin-3:before {
+    content: map-get($flaticon-map, "bitcoin-3");
+}
+.flaticon-bitcoin-wallet:before {
+    content: map-get($flaticon-map, "bitcoin-wallet");
+}
+.flaticon-blockchain:before {
+    content: map-get($flaticon-map, "blockchain");
+}

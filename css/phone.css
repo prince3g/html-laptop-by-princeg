@@ -1,0 +1,201 @@
+/*phone-env*/
+.phone-env{
+    position: absolute;
+    width: auto;
+    height: auto;
+    transform:translate(-50%, 0%) rotate(40deg) skewX(-24deg);
+    top:365px;
+    left: 80%;
+    transition: all 1s ease-in-out;
+}
+@media screen and (max-width: 1000px){
+    .phone-env{
+        left: 50% !important;
+        top:600px !important;
+    }
+}
+/*phone-body*/
+.phone-body{
+    position: absolute;
+    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display:block;
+    width:120px;
+    height:220px;
+    transition:all 0.5s ease;
+    box-shadow:1px -1px  0 #c6c7cc,
+                2px -1px 0 #c6c7cc,
+                3px  3px 0 #b4b6bb,
+                20px 20px 20px rgba(255,255,255,0.1);
+    border-radius:20px;
+    transform-style:preserve-3d;
+    border:1px solid #c6c7cc;
+    background: #000000;
+}
+
+.phone-body:before{
+    position: absolute;
+    width:20px;
+    height:2px;
+    background:#000000;
+    border-radius: inherit;
+    content: '';
+      position: absolute;
+    transform:translate(-50%, 0%);
+    bottom:-3px;
+    left: 50%;
+    border-radius:30px;
+}
+.phone-body:after{
+    position: absolute;
+    width:50px;
+    height:2px;
+    background:#000000;
+    border-radius: inherit;
+    content: '';
+      position: absolute;
+    transform:translate(-50%, 0%);
+    top:-1px;
+    left: 50%;
+    z-index: 1200;
+    border-radius:30px;
+}
+
+/*front-btn*/
+.front-btn{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+     background-image: linear-gradient(135deg, #6b696d 20%, #191919 100%);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1200;
+}
+.front-btn:before{
+    content: '';
+    position: absolute;
+    width:90%;
+    height: 90%;
+    border-radius: inherit;
+    background-color: #070707;
+}
+
+/*phone-screen*/
+.phone-screen{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: #000000;
+    border-radius: inherit;
+    border:2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-label{
+    font-size:1.5em;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+}
+.phone-display{
+     position:absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background:url(../img/wallpaper-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phone-display video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.dspy-label{
+    font-size:3em;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    z-index:2;
+}
+
+
+
+.s-lock-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: transparent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     background: rgba(0, 0, 0, 0.5);
+     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    animation:fadeIn 0.5s ease-in-out;
+    z-index: 4;
+}
+
+.keypad{
+    background-color:transparent;
+    position: relative;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pad{
+    width:100%;
+    display: flex;
+    height:inherit;
+    align-items: center;
+    justify-content: center;
+}
+.k-pad{
+    position: relative;
+    width:17px;
+    height: 17px;
+    margin-top:7px;
+    margin-left:7px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:7px;
+    flex-direction: column;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    user-select: none;
+    cursor: pointer;
+    z-index: 4;
+}
+.k-pad p{
+    margin:0;
+    padding: 0;
+}

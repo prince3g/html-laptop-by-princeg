@@ -1,0 +1,81 @@
+.open-leapDspy.front:before{
+         animation:Blink 0.1s linear infinite;
+}
+
+@keyframes Blink{
+    0%{
+        background-color: #ffffff;
+    }
+}
+
+.open-leapDspy.laptop-leap-content{
+    transform:rotateX(180deg) translateZ(0px);
+    width:340px;
+    margin-left:25px;
+    margin-top:25px;
+    height:250px;
+}
+.open-leapDspy.laptop-screen{
+  transform:rotateX(180deg) translateZ(0px);
+}
+.open-leapDspy.main-screen-btns{
+    display: none;
+}
+
+
+
+.on-device.appl-label,
+.on-device.main-screen-btns i{
+    color: #ffffff;
+     text-shadow:0 0 10px #00b3ff,
+               0 0 20px #00b3ff,
+               0 0 40px #00b3ff,
+               0 0 80px #00b3ff,
+               0 0 120px #00b3ff,
+               0 0 200px #00b3ff;
+}
+
+.on-device.Main-screen{
+    display: flex !important;
+}
+.on-device.keyboard{
+     background:url(../img/wallpaper-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.on-device.key{
+    color: #ffffff;
+}
+.on-device.t-icons button,
+.on-device.t-icons i{
+    background-color:rgba(255, 255, 255, 0.13);
+    color:#ffffff;
+}
+.on-device.t-icons .key-power-btn{
+    display: inline-flex !important;
+}
+.on-device.t-icons .p-btn1{
+    display: none;
+}
+.on-device.t-icons .p-btn2{
+    display: inline-flex;
+}
+
+.on-device.main-screen-btns .power-1{
+    display: none;
+}
+.on-device.main-screen-btns .power-2{
+    display: flex;
+}
+
+
+.show-power-option.power-option{
+    display: flex;
+}
+
+
+.show-charging-sec.charging-sec,
+.show-camera-dspy.camera-display{
+    display: flex;
+}
